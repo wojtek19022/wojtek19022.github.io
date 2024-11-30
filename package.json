@@ -1,0 +1,29 @@
+{
+  "name": "portfolio_website",
+  "version": "0.1.0",
+  "description": "This is a website to present my skills as a Full-Stack Developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wojtek19022/portfolio_website.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js",
+    "portfolio"
+  ],
+  "author": "Wojciech Sołyga",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/wojtek19022/portfolio_website/issues"
+  },
+  "homepage": "https://github.com/wojtek19022/portfolio_website#readme",
+  "dependencies": {
+    "jest": "^29.7.0",
+    "uuid": "^11.0.3"
+  }
+}
