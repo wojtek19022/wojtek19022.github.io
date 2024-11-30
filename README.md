@@ -1,2 +1,2 @@
-# monitor_animals_app
-Aplikacja Web stworzona na potrzebę monitoringu aktualnej lokalizacji zwierząt z czipem wyposażonym w technologię GPS
+# Portfolio
+Aplikacja Web stworzona na potrzebę prezentacji swoich dotychczasowych umiejętności tworzenia stron Web
