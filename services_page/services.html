@@ -2,15 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Our Services</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <head>
-        <p>Serwisy</p>
-        <tr>* GIS</tr><br>
-        <tr>* Bazy</tr><br>
-    </head>
+    {% extends "../header.html" %}
+
+    <section class="hero">
+        <h1>Transforming Ideas into Reality</h1>
+        <p>Explore Our Range of Services</p>
+        <a href="#" class="cta-button">Get Started</a>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <p>We offer a variety of services tailored to meet your needs. Explore below to find out how we can help you.</p>
+        <div class="service-cards">
+            <div class="service-card">
+                <img src="web-development.jpg" alt="Web Development">
+                <h3>Web Development</h3>
+                <p>Building responsive and engaging websites.</p>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+            <div class="service-card">
+                <img src="graphic-design.jpg" alt="Graphic Design">
+                <h3>Graphic Design</h3>
+                <p>Creating stunning visuals to enhance your brand.</p>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+            <div class="service-card">
+                <img src="digital-marketing.jpg" alt="Digital Marketing">
+                <h3>Digital Marketing</h3>
+                <p>Driving traffic and engagement through effective strategies.</p>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"Amazing service! My website looks fantastic!"</p>
+            <span>- Happy Client</span>
+        </div>
+        <div class="testimonial">
+            <p>"Professional and reliable, highly recommend!"</p>
+            <span>- Satisfied Customer</span>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to elevate your project?</h2>
+        <a href="#" class="cta-button">Contact Us Today</a>
+    </section>
+
 </body>
 </html>
