@@ -7,8 +7,20 @@
     <link rel="icon" sizes="16x16" href="images/globe.png" type="image/x-icon"> <!--icon for a tab-->
     <link rel="stylesheet" href="../home_page/home_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+            $("#header").load("/components/header.html"); 
+            $("#footer").load("/components/footer.html"); 
+        });
+    </script>
 </head>
 <body>
+    <div id="header"></div>
     <div class="container">
         <header>
             <h1>Welcome to My Tech Stack</h1>
@@ -29,5 +41,6 @@
             </div>
         </section>
     </div>
+    <div id="footer"></div>
 </body>
 </html>

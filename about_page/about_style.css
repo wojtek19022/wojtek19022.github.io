@@ -1,8 +1,9 @@
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .container {
@@ -14,11 +15,7 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-header {
-    text-align: center;
-}
-
-h1 {
+.container h1 {
     color: #3498db;
 }
 
@@ -45,7 +42,7 @@ h2 {
     color: #333;
 }
 
-p {
+.p {
     color: #666;
     line-height: 1.6;
 }

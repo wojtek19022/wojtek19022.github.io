@@ -5,44 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Basic Website</title>
     <link rel="icon" sizes="16x16" href="images/globe.png" type="image/x-icon"> <!--icon for a tab-->
-    <link rel="stylesheet" href="./styles.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="./styles.css"> <!--Link to external CSS file -->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+            $("#header").load("./components/header.html"); 
+            $("#footer").load("./components/footer.html"); 
+        });
+    </script>
 </head>
 <body>
-<header>
-    <h1>Welcome to My Website</h1>
-    <nav>
-        <a href="./home_page/home.html">Home</a>
-        <a href="./about_page/about.html">About</a>
-        <a href="./services_page/services.html">Services</a>
-        <a href="./contact_page/contact.html">Contact</a>
-    </nav>
-</header>
+    <div id="header"></div>
+    <div class="container">
+        <h2>About This Website</h2>
+        <p>This is a simple website template created to help you get started with web development. You can modify the content, styles, and structure as needed.</p>
 
-<div class="container">
-    <h2>About This Website</h2>
-    <p>This is a simple website template created to help you get started with web development. You can modify the content, styles, and structure as needed.</p>
+        <h2>Services</h2>
+        <p>Here you can describe the services you offer or any other relevant information.</p>
 
-    <h2>Services</h2>
-    <p>Here you can describe the services you offer or any other relevant information.</p>
-
-    <h2>Contact</h2>
-    <p>If you have any questions, feel free to reach out!</p>
-    <div class="contact">
-        <tr>
-            <img src="images/telephone.svg" alt="Telephone" width="40px" height="30px">
-            <a href="tel:+48 796-032-615">numer telefonu</a>
-        </tr>
-        <br>
-        <tr>
-            <img src="images/email.svg" alt="e-mail" width="40px" height="30px"> 
-            <a href="mailto:wojciech.solyga2@gmail.com">adres e-mail </a>
-        </tr>
+        <h2>Contact</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <div class="contact">
+            <tr>
+                <img src="images/telephone.svg" alt="Telephone" width="40px" height="30px">
+                <a href="tel:+48 796-032-615">numer telefonu</a>
+            </tr>
+            <br>
+            <tr>
+                <img src="images/email.svg" alt="e-mail" width="40px" height="30px"> 
+                <a href="mailto:wojciech.solyga2@gmail.com">adres e-mail </a>
+            </tr>
+        </div>
     </div>
-</div>
-
-<footer>
-    <p>&copy; 2023 My Basic Website. All rights reserved.</p>
-</footer>
-
+    <div id="footer"></div>
 </body>
 </html>
