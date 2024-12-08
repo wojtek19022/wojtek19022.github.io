@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services</title>
+    <link rel="icon" sizes="16x16" href="images/globe.png" type="image/x-icon"> <!--icon for a tab-->
     <link rel="stylesheet" href="../services_page/services_style.css">
 </head>
 <body>
@@ -21,20 +22,57 @@
                 <img src="../images/web_development.png" alt="Web Development">
                 <h3>Web Development</h3>
                 <p>Building responsive and engaging websites.</p>
-                <a href="#" class="cta-button">Learn More</a>
+                <button id="openCardButton" class="cta-button">Learn More</button>
             </div>
+
             <div class="service-card">
                 <img src="../images/graphic_design.png" alt="Graphic Design">
                 <h3>Graphic Design</h3>
                 <p>Creating stunning visuals to enhance your brand.</p>
-                <a href="#" class="cta-button">Learn More</a>
+                <button id="openGraphicDesignButton" class="cta-button">Learn More</button>
+                <link rel="stylesheet" href="../services_page/cards/cards_style.css">
             </div>
+
+            <div id="cardPopupGraphicDesign" class="card-popup">
+                <div class="card">
+                    <h2>Graphic desing</h2>
+                    <p>What we do<br>
+                        <ul>
+                            <li>Expert Team: Our team consists of experienced digital marketers who stay updated with the latest trends and best practices.<br></li>
+                            <li>Customized Strategies: We understand that every business is unique. We tailor our strategies to meet your specific goals and needs.<br></li>
+                            <li>Data-Driven Approach: We use analytics and data to inform our strategies, ensuring that every decision is backed by solid evidence.<br></li>
+                            <li>Proven Results: Our clients have seen significant improvements in traffic, engagement, and sales. Check out our case studies for more information.<br></li>
+                        </ul>
+                    </p>
+                    <button id="closeGraphicDesignCardButton" class="cta-button">Close</button>
+                </div>
+            </div>
+            <script src="../services_page/openPopup.js"></script>
+
             <div class="service-card">
                 <img src="../images/digital_marketing.png" alt="Digital Marketing">
                 <h3>Digital Marketing</h3>
                 <p>Driving traffic and engagement through effective strategies.</p>
-                <a href="#" class="cta-button">Learn More</a>
+                <button id="openDigitalMarketingButton" class="cta-button">Learn More</button>
+                <link rel="stylesheet" href="../services_page/cards/cards_style.css">
             </div>
+
+            <div id="cardPopupDigitalMarketing" class="card-popup">
+                <div class="card">
+                    <h2>Digital marketing</h2>
+                    <p>Why Choose Us?<br>
+                        <ul>
+                            <li>Expert Team: Our team consists of experienced digital marketers who stay updated with the latest trends and best practices.<br></li>
+                            <li>Customized Strategies: We understand that every business is unique. We tailor our strategies to meet your specific goals and needs.<br></li>
+                            <li>Data-Driven Approach: We use analytics and data to inform our strategies, ensuring that every decision is backed by solid evidence.<br></li>
+                            <li>Proven Results: Our clients have seen significant improvements in traffic, engagement, and sales. Check out our case studies for more information.<br></li>
+                        </ul>
+                    </p>
+                    <button id="closeDigitalMarketingCardButton" class="cta-button">Close</button>
+                </div>
+            </div>
+
+            <script src="../services_page/openPopup.js"></script>
         </div>
     </section>
 
@@ -52,7 +90,7 @@
 
     <section class="cta">
         <h2>Ready to elevate your project?</h2>
-        <a href="#" class="cta-button">Contact Us Today</a>
+        <a href="../contact_page/contact.html" class="cta-button">Contact Us Today</a>
     </section>
 
 </body>
