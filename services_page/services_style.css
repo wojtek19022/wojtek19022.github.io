@@ -5,22 +5,33 @@
     box-sizing: border-box;
 }
 
+main {
+    flex: 1; /* Allow main content to grow */
+    padding: 10px; /* Add some padding */
+}
+
+/* html, body {
+    height: 100%;
+} */
+
 body {
+    display: flex;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
+    height: 110%;
+    margin: 0; /* Remove default margin */
 }
 
 /* Hero Section */
-.hero {
+/* .hero {
     background: url('hero-background.jpg') no-repeat center center/cover;
     color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
+    padding: 150px 20px;
+} */
 
-.hero h1 {
+/* .hero h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
     color: #333;
@@ -30,7 +41,7 @@ body {
     font-size: 1.2em;
     margin-bottom: 20px;
     color: #0056b3;
-}
+} */
 
 .cta-button {
     display: inline-block;
@@ -40,6 +51,7 @@ body {
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s;
+    text-align: center;
 }
 
 .cta-button:hover {
@@ -48,17 +60,22 @@ body {
 
 /* Services Section */
 .services {
-    padding: 50px 20px;
+    padding: 20px 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
 .services h2 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     font-size: 2em;
-    margin-bottom: 20px;
 }
 
 .services p {
-    margin-bottom: 40px;
+    /* margin-bottom:    40px; */
     font-size: 1.1em;
 }
 
@@ -66,6 +83,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    /* margin-top: 10px; */
 }
 
 .service-card {
@@ -91,9 +109,9 @@ body {
     margin: 15px 0 10px;
 }
 
-.service-card p {
+/* .service-card p {
     margin-bottom: 15px;
-}
+} */
 
 /* Testimonials Section */
 .testimonials {
@@ -113,13 +131,13 @@ body {
 
 .testimonial span {
     display: block;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     font-weight: bold;
 }
 
 /* Call to Action Section */
 .cta {
-    padding: 50px 20px;
+    /* padding: 50px 20px; */
     text-align: center;
 }
 

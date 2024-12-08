@@ -4,23 +4,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
-header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
-}
-nav {
-    margin: 10px 0;
-}
-nav a {
-    margin: 0 15px;
-    color: #ffffff;
-    text-decoration: none;
-}
-nav a:hover {
-    text-decoration: underline;
-}
+
 .container {
     width: 80%;
     margin: auto;
@@ -30,13 +14,4 @@ nav a:hover {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-}
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #35424a;
-    color: #ffffff;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
 }
