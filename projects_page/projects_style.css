@@ -49,7 +49,7 @@ button:hover {
     background-color: #2980b9;
 }
 
-p {
+.projects-group p {
     color:#333;
     font-weight:bold;
     font-family: 'Arial', sans-serif;
@@ -62,4 +62,27 @@ p {
     justify-content: center;
     align-content: center;
     vertical-align: middle;
+    /* padding: 10px; */
+    border: 1px solid #333;
+    border-color: #333;
+    border-width: 1px;
+    border-radius: 10px;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.projects-group {
+    /* display: inline-block; Allows for padding and margin */
+    padding: 20px; /* Space inside the box */
+    background-color: #a7d2ff6d; /* Background color */
+    color: white; /* Text color */
+    /* text-align: center; Center the text */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.projects-group:hover {
+    background-color: #8fb0d378; /* Darker background on hover */
 }
