@@ -15,3 +15,16 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
 }
+
+h2 {
+    margin-top: 0px;
+    color: #3498db;
+}
+
+.mail, .phone {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
