@@ -27,8 +27,8 @@ body {
 /* Services Section */
 .services {
     margin: auto;
-    margin-top: 20px;
-    padding: 20px 20px;
+    /* margin-top: 20px; */
+    /* padding: 20px 20px; */
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -36,6 +36,12 @@ body {
     margin-bottom: 80px;
 }
 
+.services h1 {
+    color: #3498db;
+    text-align: center;
+    font-size: 2em;
+    height: min-content;
+}
 
 .services h2 {
     align-items: center;
@@ -55,8 +61,6 @@ body {
     flex-wrap: wrap;
     margin-top: 10px;
 }
-
-
 
 .service-card {
     background: white;
