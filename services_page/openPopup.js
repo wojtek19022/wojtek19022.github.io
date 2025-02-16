@@ -3,9 +3,21 @@
 // const openCardButton = document.getElementById('openCardButton');
 // const closeCardButton = document.getElementById('closeCardButton');
 
-let listOfCardsPopups = ["cardPopupWebDevelopment","cardPopupGraphicDesign","cardPopupDigitalMarketing"];
-let listOfCardsButtonsOpen = ["openWebDevelopmentCardButton","openGraphicDesignButton","openDigitalMarketingButton"];
-let listOfCardsButtonsClose = ["closeWebDevelopmentCardButton","closeGraphicDesignCardButton","closeDigitalMarketingCardButton"]; 
+let listOfCardsPopups = [
+    "cardPopupWebDevelopment","cardPopupDataVisualization",
+    "cardPopupDatabases", "cardPopupServers",
+    "cardPopupGISSolutions"
+];
+    let listOfCardsButtonsOpen = [
+    "openWebDevelopmentCardButton","openDataVisualizationButton",
+    "openDatabasesButton", "openServersButton",
+    "openGISSolutionsButton"
+];
+let listOfCardsButtonsClose = [
+    "closeWebDevelopmentCardButton","closeDataVisualizationButton",
+    "closeDatabasesCardButton", "closeServersCardButton",
+    "closeGISSolutionsCardButton"
+]; 
 
 for (let el = 0; el<= listOfCardsPopups.length; el++){
     let cardPopup = document.getElementById(listOfCardsPopups[el]);

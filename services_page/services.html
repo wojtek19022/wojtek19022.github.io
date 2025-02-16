@@ -23,72 +23,114 @@
     <section class="services">
         <div class="service-cards">
             <div class="service-card">
-                <img src="/images/web_development.png" alt="Web Development">
+                <img src="/images/web-coding.svg" alt="Web Development">
                 <h3>Web Development</h3>
-                <p>Building responsive and engaging websites.</p>
+                <p>Building responsive and engaging geoportals.</p>
                 <button id="openWebDevelopmentCardButton" class="cta-button">Learn More</button>
             </div>
 
             <div id="cardPopupWebDevelopment" class="card-popup">
                 <div class="card">
                     <h2>Web Development</h2>
-                    <h4>What we do</h4><br>
+                    <h4>Geoportal</h4><br>
                         <ul>
-                            <li>Expert Team: Our team consists of experienced digital marketers who stay updated with the latest trends and best practices.<br></li>
-                            <li>Customized Strategies: We understand that every business is unique. We tailor our strategies to meet your specific goals and needs.<br></li>
-                            <li>Data-Driven Approach: We use analytics and data to inform our strategies, ensuring that every decision is backed by solid evidence.<br></li>
-                            <li>Proven Results: Our clients have seen significant improvements in traffic, engagement, and sales. Check out our case studies for more information.<br></li>
+                            <li>Stack: HTML, CSS, JS, PHP, Ajax, PostgreSQL;</li>
+                            <li>Geoportal allows for edition of data by multiple users at the same time using vector layers integrated through database;</li>
+                            <li>Website allows users semi-complex authentication system with granting permissions;</li>
+                            <li>Geoportal has implemented automatic actions executed on specific moments when needed by user, eg. Downloading parcel ID through XY coordinates of user's positon;</li>
                         </ul>
                     </p>
                     <button id="closeWebDevelopmentCardButton" class="cta-button">Close</button>
                     <link rel="stylesheet" href="/services_page/cards_style.css">
                 </div>
             </div>
-            <!-- <script src="../services_page/openPopup.js"></script> -->
 
             <div class="service-card">
-                <img src="/images/graphic_design.png" alt="Graphic Design">
-                <h3>Graphic Design</h3>
-                <p>Creating stunning visuals to enhance your brand.</p>
-                <button id="openGraphicDesignButton" class="cta-button">Learn More</button>
+                <img src="/images/infographics.svg" alt="Data visualization">
+                <h3>Data visualization</h3>
+                <p>Creating stunning visuals to understand data in a simple way</p>
+                <button id="openDataVisualizationButton" class="cta-button">Learn More</button>
             </div>
 
-            <div id="cardPopupGraphicDesign" class="card-popup">
+            <div id="cardPopupDataVisualization" class="card-popup">
                 <div class="card">
-                    <h2>Graphic desing</h2>
-                    <h4>What we do</h4><br>
+                    <h2>Data visualization</h2>
+                    <h4>Graphs visualization</h4><br>
                         <ul>
-                            <li>Expert Team: Our team consists of experienced digital marketers who stay updated with the latest trends and best practices.<br></li>
-                            <li>Customized Strategies: We understand that every business is unique. We tailor our strategies to meet your specific goals and needs.<br></li>
-                            <li>Data-Driven Approach: We use analytics and data to inform our strategies, ensuring that every decision is backed by solid evidence.<br></li>
-                            <li>Proven Results: Our clients have seen significant improvements in traffic, engagement, and sales. Check out our case studies for more information.<br></li>
+                            <li>Stack: Python, Matplotlib, Pandas, Geopandas, Numpy, Scipy;</li>
+                            <li>Cleaning data process included to present correct data;</li>
+                            <li>Various charts proveded, eg. pies, bar, stacked, scatters;</li>
                         </ul>
                     </p>
-                    <button id="closeGraphicDesignCardButton" class="cta-button">Close</button>
+                    <button id="closeDataVisualizationButton" class="cta-button">Close</button>
                     <link rel="stylesheet" href="/services_page/cards_style.css">
                 </div>
             </div>
-            <!-- <script src="../services_page/openPopup.js"></script> -->
 
             <div class="service-card">
-                <img src="/images/digital_marketing.png" alt="Digital Marketing">
-                <h3>Digital Marketing</h3>
-                <p>Driving traffic and engagement through effective strategies.</p>
-                <button id="openDigitalMarketingButton" class="cta-button">Learn More</button>
+                <img src="/images/database.svg" alt="Databases">
+                <h3>Databases</h3>
+                <p>Storing and serving large amouts of data</p>
+                <button id="openDatabasesButton" class="cta-button">Learn More</button>
             </div>
 
-            <div id="cardPopupDigitalMarketing" class="card-popup">
+            <div id="cardPopupDatabases" class="card-popup">
                 <div class="card">
-                    <h2>Digital marketing</h2>
-                    <h4>Why Choose Us?</h4><br>
+                    <h2>Databases</h2>
+                    <h4>Databases solutions</h4><br>
                         <ul>
-                            <li>Expert Team: Our team consists of experienced digital marketers who stay updated with the latest trends and best practices.<br></li>
-                            <li>Customized Strategies: We understand that every business is unique. We tailor our strategies to meet your specific goals and needs.<br></li>
-                            <li>Data-Driven Approach: We use analytics and data to inform our strategies, ensuring that every decision is backed by solid evidence.<br></li>
-                            <li>Proven Results: Our clients have seen significant improvements in traffic, engagement, and sales. Check out our case studies for more information.<br></li>
+                            <li>Stack: PostgreSQL, Postgis, http;</li>
+                            <li>Complex authentication system with security layers for data safety;</li>
+                            <li>Databases provide automatic actions executed on each partition of data;</li>
+                            <li>Users authentication system is strictly integrated into roles groups in order to sort users right in organized way;</li>
                         </ul>
                     </p>
-                    <button id="closeDigitalMarketingCardButton" class="cta-button">Close</button>
+                    <button id="closeDatabasesCardButton" class="cta-button">Close</button>
+                    <link rel="stylesheet" href="/services_page/cards_style.css">
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="/images/server.svg" alt="Servers">
+                <h3>Servers</h3>
+                <p>Hosting prepared services</p>
+                <button id="openServersButton" class="cta-button">Learn More</button>
+            </div>
+
+            <div id="cardPopupServers" class="card-popup">
+                <div class="card">
+                    <h2>Servers</h2>
+                    <h4>Server solutions</h4><br>
+                        <ul>
+                            <li>Stack: linux (Ubuntu, Debian, Lubuntu), Bash, Python, Golang;</li>
+                            <li>Servers are protected through a VPN network and other security layers in order to protect user's services;</li>
+                            <li>Server has automated actions running in background in order to keep system as automatic and simple as possible;</li>
+                        </ul>
+                    </p>
+                    <button id="closeServersCardButton" class="cta-button">Close</button>
+                    <link rel="stylesheet" href="/services_page/cards_style.css">
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <img src="/images/qgis-monochrome-black2.webp" alt="Databases">
+                <h3>GIS solutions</h3>
+                <p>GIS analyses and automation</p>
+                <button id="openGISSolutionsButton" class="cta-button">Learn More</button>
+            </div>
+
+            <div id="cardPopupGISSolutions" class="card-popup">
+                <div class="card">
+                    <h2>GIS solutions</h2>
+                    <h4>QGIS Desktop solutions</h4><br>
+                        <ul>
+                            <li>Stack: QGIS Desktop, Python, Javascript;</li>
+                            <li>Consultations in helping users solve complex analyses problems;</li>
+                            <li>Providing Plugins to QGIS Desktop for automation of work;</li>
+                            <li>Preparation of GIS projects for work and development purposes</li>
+                        </ul>
+                    </p>
+                    <button id="closeGISSolutionsCardButton" class="cta-button">Close</button>
                     <link rel="stylesheet" href="/services_page/cards_style.css">
                 </div>
             </div>

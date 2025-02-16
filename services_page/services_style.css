@@ -56,6 +56,8 @@ body {
     margin-top: 10px;
 }
 
+
+
 .service-card {
     background: white;
     border-radius: 8px;
@@ -73,6 +75,8 @@ body {
 .service-card img {
     max-width: 100%;
     border-radius: 8px;
+    width: 200px;
+    height: 200px;
 }
 
 .service-card h3 {
