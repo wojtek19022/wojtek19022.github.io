@@ -30,9 +30,8 @@ body {
 .profile .profile-img {
     top: 150px;
     width: 150px; /*Adjust as needed*/
-    height: auto;
+    height: 150px;
     border-radius: 75px; /*Circular image*/
-    margin-right: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -54,30 +53,41 @@ body {
 
 .socials .social-link {
     top: 200px;
-    width: 30px;
-    height: 30px;
-    border-radius: 30%;
+    width: 35px;
+    height: 35px;
+    border-radius: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     font-size: 24px;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: transparent;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.front {
+    width: 150px;
+    display: grid;
+    justify-items: center;
+    margin-right: 20px;
 }
 
 .socials .socials-bar {
     display: flex;
+    gap: 5px;
+    padding: 10px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
 }
-
 
 .socials {
     display: flex;
     margin-top: 15px;
-    margin-left: 25px;
-    gap: 15px;
-    padding: 5px;
-    border-radius: 10px;
+    gap: 25px;
+    padding: 15px;
+    border-radius: 30px;
     width: fit-content;
 }
 
@@ -87,6 +97,7 @@ body {
 
 /* Animation effects */
 .social-link:hover {
+    background: transparent;
     transform: translateY(-5px);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
