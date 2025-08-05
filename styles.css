@@ -22,9 +22,10 @@ h2 {
     color: #3498db;
 }
 
-.mail, .phone {
-    color: #3498db;
+.mail,.phone {
+    /* color: #3498db; */
     display: flex;
+    align-content: center;
     justify-content: start;
     align-items: center;
     font-family: Arial, sans-serif;

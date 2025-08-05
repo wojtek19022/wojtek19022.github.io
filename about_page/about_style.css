@@ -75,6 +75,7 @@ body {
 
 .socials .socials-bar {
     display: flex;
+    max-height: 50px;
     gap: 5px;
     padding: 10px;
     background: white;
