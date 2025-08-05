@@ -35,7 +35,12 @@ body {
     padding: 20px;
     width: 150px; /* Adjust width as needed */
     margin: 10px;
+    justify-content: center;
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon h2 {
+    text-align: center;
 }
 
 .icon:hover {
@@ -55,7 +60,7 @@ body {
     color: #3498db;
 }
 
-h2 {
+.icon h3 {
     margin-top: 10px;
     color: #333;
 }

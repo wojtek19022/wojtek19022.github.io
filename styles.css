@@ -23,6 +23,7 @@ h2 {
 }
 
 .mail, .phone {
+    color: #3498db;
     display: flex;
     justify-content: start;
     align-items: center;
