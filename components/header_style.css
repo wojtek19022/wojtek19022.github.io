@@ -19,7 +19,7 @@ nav a:hover {
 }
 
 .light-dark-mode {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     align-items: center;
     top: 0px;
