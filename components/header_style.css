@@ -7,7 +7,11 @@
     text-align: center;
 }
 nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 10px 0;
+    height: fit-content;
 }
 nav a {
     margin: 0 15px;
@@ -18,13 +22,85 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.selective-tools {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    position: absolute;
+    right: 15px;
+    height: 25px;
+}
+
+
 .light-dark-mode {
-    /* position: absolute; */
+    right: 0px;
     display: flex;
     align-items: center;
-    top: 0px;
-    right: 0px;
-    margin: 35px;
+}
+
+.dropdown-langs,
+.dropdown-langs .dropdown-item {
+    height: 25px; /* Set the height to 25px */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    background-color: white;
+}
+
+.dropdown-langs {
+    border-radius: 15px;
+}
+
+.dropdown-langs .dropdown-menu {
+    height: 25px;
+    padding: 0; /* Remove default padding */
+    border-radius: 15px;
+}
+
+.dropdown-langs .btn:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+.dropdown-langs .dropdown-menu {
+    border-radius: 12px;
+    /* overflow: hidden; */
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.dropdown-langs .dropdown-item {
+    padding: 8px 16px;
+}
+.dropdown-langs .dropdown-menu > li:first-child .dropdown-item {
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+}
+.dropdown-langs .dropdown-menu > li:last-child .dropdown-item {
+    border-bottom-left-radius: 12px !important;
+    border-bottom-right-radius: 12px !important;
+}
+
+#dropdownMenuButton1 {
+    height: 25px;
+    display: flex;
+    vertical-align: middle;
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+.dropdown-langs .btn:focus {
+    outline: none;
+    box-shadow: none; /* This removes any box shadow that may appear */
 }
 
 body.dark {background-color: #292c35;} /* #9b59b6 */
@@ -54,9 +130,9 @@ body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark p, body.dark u
     align-items: center;
 }
 
-.fa-moon {color: #f1c40f;}
+.fa-moon {color: #3498db;}
 
-.fa-sun {color: #f39c12;}
+.fa-sun {color: #3498db;}
 
 .checkbox-label .ball {
     background-color: #fff;
@@ -73,22 +149,27 @@ body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark p, body.dark u
     transform: translateX(24px);
 }
 
-
-/*  Support me if you like it */
-.support {
-	position: absolute;
-	right: 20px;
-	bottom: 20px;
+/* Mobile positioning override (768px - 431px) */
+@media (max-width: 768px) and (min-width: 431px) {
+    .selective-tools {
+        position: fixed;
+        right: 15px;
+        height: 25px;
+    }
 }
 
-.support a {
-    color: #292c35;
-    font-size: 32px;
-    backface-visibility: hidden;
-    display: inline-block;
-    transition: transform 0.2s ease;
-}
+/* Small mobile positioning (430px and below) */
+@media (max-width: 430px) {
+    .selective-tools {
+        position: fixed;
+        transform: translateY(+150%);
+        right: 15px;
+        height: 25px;
+    }
 
-.support a:hover{
-    transform: scale(1.1);
+    #header {
+        background-size: cover;
+        height: 125px;
+    }
+
 }
