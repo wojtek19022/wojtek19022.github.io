@@ -30,27 +30,31 @@ $(document).ready(function() {
     const langSpan = document.querySelector('#dropdownMenuButton1 .langName');
     // Check localStorage for saved preference
     const savedlang = localStorage.getItem('language');
-    flagSpan.className = `flag-icon flag-icon-${savedlang} me-1`;
-    const body = document.body;
-    
-    if (savedlang == "") {
-        var defaultLang = "English"
-        localStorage.setItem('language', ReturnNameForSelectedLang (defaultLang, langs));
-    } 
-    else if (savedlang != langCmbbx.innerText.trim()) {
-        for (let num=0; num < langBttns.length; num++) {
-            if (ReturnNameForSelectedLang (langBttns[num].innerText.trim(), langs) === savedlang) {
-                langSpan.textContent= `${langBttns[num].innerText.trim()}`
-                flagSpan.className = `flag-icon flag-icon-${savedlang} me-1`;
-            }
+    for (let innerNum = 0; innerNum < langBttns.length; innerNum++) { // Changed variable name
+        if (ReturnNameForSelectedLang(langBttns[innerNum].innerText.trim(), langs) === localStorage.getItem('language')) {
+            langSpan.textContent = `${langBttns[innerNum].innerText.trim()}`;
+            flagSpan.className = `flag-icon flag-icon-${ReturnNameForSelectedLang(langBttns[innerNum].innerText.trim(), langs)} me-1`;
         }
-    } 
+    }
+    const body = document.body;
 
-    for (let num=0; num < langBttns.length; num++) {
+    for (let num = 0; num < langBttns.length; num++) {
         langBttns[num].addEventListener('click', () => {
-            localStorage.setItem('language', ReturnNameForSelectedLang (langBttns[num].innerText.trim(), langs));
+            localStorage.setItem('language', ReturnNameForSelectedLang(langBttns[num].innerText.trim(), langs));
+            console.log("COMP", savedlang, langCmbbx.innerText.trim());
+            if (localStorage.getItem('language') === "") {
+                var defaultLang = "English";
+                localStorage.setItem('language', ReturnNameForSelectedLang(defaultLang, langs));
+            } else if (localStorage.getItem('language') !== langCmbbx.innerText.trim()) {
+                for (let innerNum = 0; innerNum < langBttns.length; innerNum++) { // Changed variable name
+                    if (ReturnNameForSelectedLang(langBttns[innerNum].innerText.trim(), langs) === localStorage.getItem('language')) {
+                        langSpan.textContent = `${langBttns[innerNum].innerText.trim()}`;
+                        flagSpan.className = `flag-icon flag-icon-${ReturnNameForSelectedLang(langBttns[innerNum].innerText.trim(), langs)} me-1`;
+                    }
+                }
+            }
         });
-    };
+    }
 });
 
 function ReturnNameForSelectedLang (lang_name, lang_arr) {
@@ -90,13 +94,13 @@ function fetchLanguageData(lang) {
 function setUpTranslations () {
     $(".dropdown-menu .dropdown-item").removeClass("active");
     $(this).addClass("active");
-    let lang_txt = $(this).text().trim();
+    let lang_txt = localStorage.getItem('language')
     $(this)
         .parents(".dropdown-langs")
         .find(".btn")
-        .html("<span class='flag-icon flag-icon-" + ReturnNameForSelectedLang (lang_txt, langs) + " me-1'></span>" + lang_txt);
+        .html(`<span class='flag-icon flag-icon-${lang_txt} me-1></span>`);
     // const userPreferredLanguage = localStorage.getItem('language') || 'en';
-    fetchLanguageData(ReturnNameForSelectedLang (lang_txt, langs)).then(langData => updateContent(langData));
+    fetchLanguageData(lang_txt).then(langData => updateContent(langData));
 }
 
 if ($(".dropdown-langs").length) {

@@ -22,118 +22,118 @@
     <div id="header"></div>
     <section class="services">
         <header>
-            <h1>Provided services</h1>
+            <h1 data-i18n="services_head">Provided services</h1>
         </header>
         <div class="service-cards">
             <div class="service-card">
                 <img src="/images/web-coding.svg" alt="Web Development">
-                <h3>Web Development</h3>
-                <p>Building responsive and engaging geoportals.</p>
-                <button id="openWebDevelopmentCardButton" class="cta-button">Learn More</button>
+                <h3 data-i18n="services_content_web_dev_head">Web Development</h3>
+                <p data-i18n="services_content_web_dev_info">Building responsive and engaging geoportals.</p>
+                <button data-i18n="services_content_more" id="openWebDevelopmentCardButton" class="cta-button">Learn More</button>
             </div>
 
             <div id="cardPopupWebDevelopment" class="card-popup">
                 <div class="card">
-                    <h2>Web Development</h2>
+                    <h2 data-i18n="services_content_web_dev_head">Web Development</h2>
                     <h4>Geoportal</h4>
                         <ul>
                             <li>Stack: HTML, CSS, JS, PHP, Ajax, PostgreSQL;</li>
-                            <li>Geoportal allows for edition of data by multiple users at the same time using vector layers integrated through database;</li>
-                            <li>Website allows users semi-complex authentication system with granting permissions;</li>
-                            <li>Geoportal has implemented automatic actions executed on specific moments when needed by user, eg. Downloading parcel ID through XY coordinates of user's positon;</li>
+                            <li data-i18n="services_content_web_dev_card_pt1">Geoportal allows for edition of data by multiple users at the same time using vector layers integrated through database;</li>
+                            <li data-i18n="services_content_web_dev_card_pt2">Website allows users semi-complex authentication system with granting permissions;</li>
+                            <li data-i18n="services_content_web_dev_card_pt3">Geoportal has implemented automatic actions executed on specific moments when needed by user, eg. Downloading parcel ID through XY coordinates of user's positon;</li>
                         </ul>
                     </p>
-                    <button id="closeWebDevelopmentCardButton" class="cta-button">Close</button>
+                    <button data-i18n="services_content_close" id="closeWebDevelopmentCardButton" class="cta-button">Close</button>
                     <link rel="stylesheet" href="/services_page/cards_style.css">
                 </div>
             </div>
 
             <div class="service-card">
                 <img src="/images/infographics.svg" alt="Data visualization">
-                <h3>Data visualization</h3>
-                <p>Creating stunning visuals to understand data in a simple way</p>
-                <button id="openDataVisualizationButton" class="cta-button">Learn More</button>
+                <h3 data-i18n="services_content_data_viz_head">Data visualization</h3>
+                <p data-i18n="services_content_data_viz_info">Creating stunning visuals to understand data in a simple way</p>
+                <button data-i18n="services_content_more" id="openDataVisualizationButton" class="cta-button">Learn More</button>
             </div>
 
             <div id="cardPopupDataVisualization" class="card-popup">
                 <div class="card">
-                    <h2>Data visualization</h2>
-                    <h4>Graphs visualization</h4>
+                    <h2 data-i18n="services_content_data_viz_head">Data visualization</h2>
+                    <h4 data-i18n="services_content_data_viz_card_head">Graphs visualization</h4>
                         <ul>
                             <li>Stack: Python, Matplotlib, Pandas, Geopandas, Numpy, Scipy;</li>
-                            <li>Cleaning data process included to present correct data;</li>
-                            <li>Various charts proveded, eg. pies, bar, stacked, scatters;</li>
+                            <li data-i18n="services_content_data_viz_card_pt1">Cleaning data process included to present correct data;</li>
+                            <li data-i18n="services_content_data_viz_card_pt2">Various charts provided, eg. pies, bar, stacked, scatters;</li>
                         </ul>
                     </p>
-                    <button id="closeDataVisualizationButton" class="cta-button">Close</button>
+                    <button data-i18n="services_content_close" id="closeDataVisualizationButton" class="cta-button">Close</button>
                     <link rel="stylesheet" href="/services_page/cards_style.css">
                 </div>
             </div>
 
             <div class="service-card">
                 <img src="/images/database.svg" alt="Databases">
-                <h3>Databases</h3>
-                <p>Storing and serving large amouts of data</p>
-                <button id="openDatabasesButton" class="cta-button">Learn More</button>
+                <h3 data-i18n="services_content_db_head">Databases</h3>
+                <p data-i18n="services_content_db_info">Storing and serving large amouts of data</p>
+                <button data-i18n="services_content_more" id="openDatabasesButton" class="cta-button">Learn More</button>
             </div>
 
             <div id="cardPopupDatabases" class="card-popup">
                 <div class="card">
-                    <h2>Databases</h2>
-                    <h4>Databases solutions</h4>
+                    <h2 data-i18n="services_content_db_head">Databases</h2>
+                    <h4 data-i18n="services_content_db_card_info">Databases solutions</h4>
                         <ul>
                             <li>Stack: PostgreSQL, Postgis, http;</li>
-                            <li>Complex authentication system with security layers for data safety;</li>
-                            <li>Databases provide automatic actions executed on each partition of data;</li>
-                            <li>Users authentication system is strictly integrated into roles groups in order to sort users right in organized way;</li>
+                            <li data-i18n="services_content_db_card_pt1">Complex authentication system with security layers for data safety;</li>
+                            <li data-i18n="services_content_db_card_pt2">Databases provide automatic actions executed on each partition of data;</li>
+                            <li data-i18n="services_content_db_card_pt3">Users authentication system is strictly integrated into roles groups in order to sort users right in organized way;</li>
                         </ul>
                     </p>
-                    <button id="closeDatabasesCardButton" class="cta-button">Close</button>
+                    <button data-i18n="services_content_close" id="closeDatabasesCardButton" class="cta-button">Close</button>
                     <link rel="stylesheet" href="/services_page/cards_style.css">
                 </div>
             </div>
 
             <div class="service-card">
                 <img src="/images/server.svg" alt="Servers">
-                <h3>Servers</h3>
-                <p>Hosting prepared services</p>
-                <button id="openServersButton" class="cta-button">Learn More</button>
+                <h3 data-i18n="services_content_servers_head">Servers</h3>
+                <p data-i18n="services_content_servers_info">Hosting prepared services</p>
+                <button data-i18n="services_content_more" id="openServersButton" class="cta-button">Learn More</button>
             </div>
 
             <div id="cardPopupServers" class="card-popup">
                 <div class="card">
-                    <h2>Servers</h2>
-                    <h4>Server solutions</h4>
+                    <h2 data-i18n="services_content_servers_head">Servers</h2>
+                    <h4 data-i18n="services_content_servers_card_head">Server solutions</h4>
                         <ul>
                             <li>Stack: linux (Ubuntu, Debian, Lubuntu), Bash, Python, Golang;</li>
-                            <li>Servers are protected through a VPN network and other security layers in order to protect user's services;</li>
-                            <li>Server has automated actions running in background in order to keep system as automatic and simple as possible;</li>
+                            <li data-i18n="services_content_servers_card_pt1">Servers are protected through a VPN network and other security layers in order to protect user's services;</li>
+                            <li data-i18n="services_content_servers_card_pt2">Server has automated actions running in background in order to keep system as automatic and simple as possible;</li>
                         </ul>
                     </p>
-                    <button id="closeServersCardButton" class="cta-button">Close</button>
+                    <button data-i18n="services_content_close" id="closeServersCardButton" class="cta-button">Close</button>
                     <link rel="stylesheet" href="/services_page/cards_style.css">
                 </div>
             </div>
             
             <div class="service-card">
                 <img src="/images/qgis-monochrome-black2.webp" alt="Databases">
-                <h3>GIS solutions</h3>
-                <p>GIS analyses and automation</p>
-                <button id="openGISSolutionsButton" class="cta-button">Learn More</button>
+                <h3 data-i18n="services_content_gis_head">GIS solutions</h3>
+                <p data-i18n="services_content_gis_info">GIS analyses and automation</p>
+                <button data-i18n="services_content_more" id="openGISSolutionsButton" class="cta-button">Learn More</button>
             </div>
 
             <div id="cardPopupGISSolutions" class="card-popup">
                 <div class="card">
-                    <h2>GIS solutions</h2>
-                    <h4>QGIS Desktop solutions</h4>
+                    <h2 data-i18n="services_content_gis_head">GIS solutions</h2>
+                    <h4 data-i18n="services_content_gis_card_head">QGIS Desktop solutions</h4>
                         <ul>
                             <li>Stack: QGIS Desktop, Python, Javascript;</li>
-                            <li>Consultations in helping users solve complex analyses problems;</li>
-                            <li>Providing Plugins to QGIS Desktop for automation of work;</li>
-                            <li>Preparation of GIS projects for work and development purposes</li>
+                            <li data-i18n="services_content_gis_card_pt1">Consultations in helping users solve complex analyses problems;</li>
+                            <li data-i18n="services_content_gis_card_pt2">Providing Plugins to QGIS Desktop for automation of work;</li>
+                            <li data-i18n="services_content_gis_card_pt3">Preparation of GIS projects for work and development purposes</li>
                         </ul>
                     </p>
-                    <button id="closeGISSolutionsCardButton" class="cta-button">Close</button>
+                    <button data-i18n="services_content_close" id="closeGISSolutionsCardButton" class="cta-button">Close</button>
                     <link rel="stylesheet" href="/services_page/cards_style.css">
                 </div>
             </div>
