@@ -11,6 +11,7 @@
     "page_not_found_err_head": "Oops! Page Not Found",
     "page_not_found_err_info": "Sorry, the page you are looking for does not exist.",
     "page_not_found_button": "Go Back Home",
+    "home_welcome_stack":"My tech stack",
     "home_welcome_head": "Welcome to My Tech Stack",
     "home_welcome_info": "Here are some of the programming languages I work with:",
     "home_coding_langs": "Coding languages",

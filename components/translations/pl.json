@@ -11,6 +11,7 @@
     "page_not_found_err_head": "Ups! Strona nie została znaleziona",
     "page_not_found_err_info": "Przepraszamy, strona której szukasz nie istnieje.",
     "page_not_found_button": "Wróć do strony początkowej",
+    "home_welcome_stack":"Mój stack",
     "home_welcome_head": "Witam w moim stack'u",
     "home_welcome_info": "Tutaj są używane przeze mnie języki programowania z którymi pracuję:",
     "home_coding_langs": "Języki programowania",
