@@ -32,12 +32,6 @@ body {
     flex-direction: column;
 }
 
-label {
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #333;
-}
-
 button {
     background: #ffffff;
     color: white;

@@ -32,10 +32,12 @@ body {
     background: #ffffff;
     border: 2px solid #3498db;
     border-radius: 10px;
-    padding: 20px;
+    padding: 25px;
     width: 150px; /* Adjust width as needed */
     margin: 10px;
     justify-content: center;
+    justify-items: center;
+    align-items: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -63,4 +65,5 @@ body {
 .icon h3 {
     margin-top: 10px;
     color: #333;
+    margin: 10px;
 }
