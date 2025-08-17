@@ -5,6 +5,10 @@ const langs = {
             name:"us"
         },
         {
+            id:"Polski",
+            name:"pl"
+        },
+        {
             id:"Français",
             name:"fr"
         },
@@ -13,13 +17,9 @@ const langs = {
             name:"es"
         },
         {
-            id:"Polski",
-            name:"pl"
-        },
-        {
             id: "Deutsch",
             name:"de"
-        }
+        },
     ]
 }
 

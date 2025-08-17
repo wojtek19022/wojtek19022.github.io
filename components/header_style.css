@@ -65,15 +65,14 @@ nav a:hover {
     height: 25px;
 }
 
-.dropdown-langs,
-.dropdown-langs .dropdown-item {
+.dropdown-langs {
     height: 25px; /* Set the height to 25px */
     display: flex; /* Use flexbox for alignment */
     align-items: center; /* Center items vertically */
     color: black;
     font-family: Arial, sans-serif;
     font-size: 1em;
-    background-color: white;
+    /* background-color: white; */
 }
 
 .dropdown-langs {
@@ -81,36 +80,29 @@ nav a:hover {
     width: fit-content;
 }
 
-.dropdown-langs .dropdown-menu {
-    height: 25px;
-    padding: 0; /* Remove default padding */
-    /* border-radius: 15px; */
-}
-
 .dropdown-langs .btn:focus {
     outline: none;
     box-shadow: none !important;
 }
+
 .dropdown-langs .dropdown-menu {
-    /* border-radius: 12px; */
-    /* overflow: hidden; */
-    background: transparent;
+    border-radius: 20px;
+    height: fit-content;
+    overflow: hidden;
+    background: white;
     border: none;
     /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
 }
-.dropdown-langs .dropdown-item {
-    padding: 10px 15px;
-    margin-right: 15px;
-    right: 15px;
+
+.dropdown-langs .dropdown-menu > li {
+    justify-content: center;
 }
-.dropdown-langs .dropdown-menu > li:first-child .dropdown-item {
-    border-top-left-radius: 12px !important;
-    border-top-right-radius: 12px !important;
+
+
+.dropdown-langs .dropdown-menu > li > dropdown-item {
+    height: 20px;
 }
-.dropdown-langs .dropdown-menu > li:last-child .dropdown-item {
-    border-bottom-left-radius: 12px !important;
-    border-bottom-right-radius: 12px !important;
-}
+
 
 #dropdownMenuButton1 {
     height: 25px;
