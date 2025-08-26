@@ -27,8 +27,8 @@ body {
 /* Services Section */
 .services {
     margin: auto;
-    /* margin-top: 20px; */
-    /* padding: 20px 20px; */
+    margin-top: 20px;
+    padding: 20px   20px;
     text-align: center;
     align-items: center;
     justify-content: center;
