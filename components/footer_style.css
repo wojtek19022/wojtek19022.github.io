@@ -1,11 +1,22 @@
 footer {
-    padding: 5px 0px;
     background: #35424a;
     color: #ffffff;
     position: fixed;
-    bottom: 0px;
-    /* height: 5%; */
-    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+.foot {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    height: 100%;
     text-align: center;
+}
+
+.foot p {
+    margin: 0;
+    line-height: 40px;
 }
